@@ -54,10 +54,9 @@ class LoginViewController: UIViewController {
                 else{
                     dispatch_async(dispatch_get_main_queue(), {
                         
-//                        self.alert.title = "เข้าสู่ระบบล้มเหลว"
-//                        self.alert.message = "เช็ค email ของคุณอีกครั้ง"
-//                        self.alert.addButtonWithTitle("OK")
-//                        self.alert.show()
+                        let alert = UIAlertController(title: "อีเมลหรือรหัสผ่านไม่ถูกต้อง", message: "กรุณาใส่ใหม่อีกครั้ง", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "ตกลง", style: .Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
                     })
                 }
             })
