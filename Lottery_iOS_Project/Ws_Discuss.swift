@@ -23,7 +23,7 @@ class Ws_Discuss {
                 //                print("jsonResult : " + String(jsonResult))
                 //                print("================================================================")
                 if let arrayOfDictionaries = jsonResult as? AnyObject {
-                    discussPeriod = mDiscussPeriod(dictionary: arrayOfDictionaries )
+                    discussPeriod = mDiscussPeriod(dictionary: arrayOfDictionaries as! AnyObject)
                     
                     completion(responseData: discussPeriod, errorMessage: error)
                 } else {
@@ -51,7 +51,7 @@ class Ws_Discuss {
                 //                print("jsonResult : " + String(jsonResult))
                 //                print("================================================================")
                 if let arrayOfDictionaries = jsonResult as? AnyObject {
-                    discussPeriod = mDiscussPeriod(dictionary: arrayOfDictionaries )
+                    discussPeriod = mDiscussPeriod(dictionary: arrayOfDictionaries as! AnyObject)
                     
                     completion(responseData: discussPeriod, errorMessage: error)
                 } else {
@@ -79,7 +79,7 @@ class Ws_Discuss {
                 //                print("jsonResult : " + String(jsonResult))
                 //                print("================================================================")
                 if let arrayOfDictionaries = jsonResult as? AnyObject {
-                    discussPeriod = mDiscussPeriod(dictionary: arrayOfDictionaries )
+                    discussPeriod = mDiscussPeriod(dictionary: arrayOfDictionaries as! AnyObject)
                     
                     completion(responseData: discussPeriod, errorMessage: error)
                 } else {
@@ -127,7 +127,7 @@ class Ws_Discuss {
     
     // AddCommentDiscuss
     static func AddCommentDiscuss(user_id:Int64 ,discuss_id: Int64,message: String,
-                                    completion:(responseData:[mDiscussReply],errorMessage:NSError?)->Void)
+                                  completion:(responseData:[mDiscussReply],errorMessage:NSError?)->Void)
     {
         var userLottery:[mDiscussReply]!
         let url = NSURL(string: "http://tskyonline.com:83/WS_Discuss/AddCommentDiscuss?user_id=" + String(user_id) + "&discuss_id=" + String(discuss_id) + "&message=" + message)
@@ -157,7 +157,7 @@ class Ws_Discuss {
     
     // DeleteCommentDiscuss
     static func DeleteCommentDiscuss(discussReply_id:Int64 ,discuss_id: Int64,message: String,
-                                  completion:(responseData:[mDiscussReply],errorMessage:NSError?)->Void)
+                                     completion:(responseData:[mDiscussReply],errorMessage:NSError?)->Void)
     {
         var userLottery:[mDiscussReply]!
         let url = NSURL(string: "http://tskyonline.com:83/WS_Discuss/DeleteCommentDiscuss?discussReply_id=" + String(discussReply_id) + "&discuss_id=" + String(discuss_id))
@@ -199,7 +199,7 @@ class Ws_Discuss {
                 //                print("jsonResult : " + String(jsonResult))
                 //                print("================================================================")
                 if let arrayOfDictionaries = jsonResult as? AnyObject {
-                    messageResponse = mMessageResponse(dictionary: arrayOfDictionaries )
+                    messageResponse = mMessageResponse(dictionary: arrayOfDictionaries as! AnyObject)
                     
                     completion(responseData: messageResponse, errorMessage: error)
                 } else {
@@ -227,7 +227,7 @@ class Ws_Discuss {
                 //                print("jsonResult : " + String(jsonResult))
                 //                print("================================================================")
                 if let arrayOfDictionaries = jsonResult as? AnyObject {
-                    messageResponse = mMessageResponse(dictionary: arrayOfDictionaries )
+                    messageResponse = mMessageResponse(dictionary: arrayOfDictionaries as! AnyObject)
                     
                     completion(responseData: messageResponse, errorMessage: error)
                 } else {
