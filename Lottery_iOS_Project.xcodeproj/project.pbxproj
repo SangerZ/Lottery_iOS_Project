@@ -40,6 +40,7 @@
 		F0B278C71DE332020029FE06 /* CustomUISwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B278C51DE332020029FE06 /* CustomUISwitchTableViewCell.swift */; };
 		F0B278C81DE332020029FE06 /* CustomUISwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B278C61DE332020029FE06 /* CustomUISwitchTableViewCell.xib */; };
 		F0E3C10C1DE057EF008863B6 /* DLRadioButton.h in Sources */ = {isa = PBXBuildFile; fileRef = F001D0591DDDF149000FFAE7 /* DLRadioButton.h */; };
+		F0FAC5D31DEEFCFA00A79D10 /* LotteryUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAC5D21DEEFCFA00A79D10 /* LotteryUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		F00F734B1DDF5595009033C3 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		F0B278C51DE332020029FE06 /* CustomUISwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUISwitchTableViewCell.swift; sourceTree = "<group>"; };
 		F0B278C61DE332020029FE06 /* CustomUISwitchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomUISwitchTableViewCell.xib; sourceTree = "<group>"; };
+		F0FAC5D21DEEFCFA00A79D10 /* LotteryUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				F00F734B1DDF5595009033C3 /* ChangePasswordViewController.swift */,
 				F0B278C51DE332020029FE06 /* CustomUISwitchTableViewCell.swift */,
 				F0B278C61DE332020029FE06 /* CustomUISwitchTableViewCell.xib */,
+				F0FAC5D21DEEFCFA00A79D10 /* LotteryUserViewController.swift */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				F0E3C10C1DE057EF008863B6 /* DLRadioButton.h in Sources */,
 				1632AF371DC4A31C00DF20DD /* AppDelegate.swift in Sources */,
 				F00F73461DDF146F009033C3 /* UserViewController.swift in Sources */,
+				F0FAC5D31DEEFCFA00A79D10 /* LotteryUserViewController.swift in Sources */,
 				1632AF851DC50ED700DF20DD /* LotteryDetailsViewController.swift in Sources */,
 				F001D04F1DDDB891000FFAE7 /* mLotteryPeriod.swift in Sources */,
 				F001D05E1DDDF615000FFAE7 /* LoginViewController.swift in Sources */,

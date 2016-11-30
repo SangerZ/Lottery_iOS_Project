@@ -32,7 +32,8 @@ class LoginViewController: UIViewController {
         if(email != "" && password != "" && email.containsString("@")){
             Ws_User.GetGlobalProperty(email, password: password, completion: { (responseData, errorMessage) -> Void in
             
-                let vc = self.storyboard?.instantiateViewControllerWithIdentifier("userView") as! UserViewController
+                //let vc = self.storyboard?.instantiateViewControllerWithIdentifier("userView") as! UserViewController
+                let vc = self.storyboard?.instantiateViewControllerWithIdentifier("lotteryUserView") as! LotteryUserViewController
                 let globalProperty: mGlobalproperty = responseData
                 
                 if(globalProperty.resultResponse.result == true){

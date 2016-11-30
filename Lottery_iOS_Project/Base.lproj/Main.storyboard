@@ -219,7 +219,7 @@
                                         <rect key="frame" x="0.0" y="92" width="1000" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hs-Pb-Hf3" id="bnN-zS-8vI">
-                                            <frame key="frameInset" width="375" height="89.5"/>
+                                            <frame key="frameInset" width="1000" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -439,9 +439,6 @@
                                 <state key="normal" title="ลืมรหัสผ่าน">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="H1Y-Td-uWP" kind="push" id="ViE-SG-ghe"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY6-IJ-cyy">
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.59999999999999998" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -699,11 +696,119 @@
                         <outlet property="emailField" destination="7E4-12-Cm1" id="gY1-MO-EZu"/>
                         <outlet property="nameField" destination="cAL-DS-Olp" id="rj2-Xu-d2f"/>
                         <outlet property="passwordField" destination="ZMp-GR-mIA" id="ktU-r7-lDU"/>
+                        <outlet property="theScrollView" destination="KOl-pv-m1m" id="P1Q-Y6-nQe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTV-OL-FBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1392.8" y="774.96251874062978"/>
+        </scene>
+        <!--Lottery User View Controller-->
+        <scene sceneID="g8x-QO-h0V">
+            <objects>
+                <viewController storyboardIdentifier="lotteryUserView" id="H4l-NV-32I" customClass="LotteryUserViewController" customModule="Lottery_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="83V-Eg-Nsc"/>
+                        <viewControllerLayoutGuide type="bottom" id="21z-SB-Pre"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZIU-Lz-Ur9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-gS-crg">
+                                <frame key="frameInset" minY="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="regularCell" id="nbY-Yz-ZWm" customClass="RegularViewCell" customModule="Lottery_iOS_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbY-Yz-ZWm" id="RiL-YA-jQi">
+                                            <frame key="frameInset" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Si-SU-dSP">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="0nH-41-zju"/>
+                                                        <constraint firstAttribute="height" constant="30" id="7yx-Kj-usV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvD-Qg-c4u">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qvD-Qg-c4u" firstAttribute="leading" secondItem="8Si-SU-dSP" secondAttribute="trailing" constant="8" id="98c-TK-iK2"/>
+                                                <constraint firstItem="8Si-SU-dSP" firstAttribute="leading" secondItem="RiL-YA-jQi" secondAttribute="leading" constant="7" id="CFX-uy-BT3"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Si-SU-dSP" secondAttribute="bottom" constant="7" id="OEC-K4-jl2"/>
+                                                <constraint firstItem="8Si-SU-dSP" firstAttribute="top" secondItem="RiL-YA-jQi" secondAttribute="top" constant="7" id="UB6-Sd-5qF"/>
+                                                <constraint firstItem="qvD-Qg-c4u" firstAttribute="top" secondItem="RiL-YA-jQi" secondAttribute="topMargin" constant="3" id="gdP-BE-Arh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qvD-Qg-c4u" secondAttribute="bottom" constant="3" id="kQa-6S-6SY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImage" destination="8Si-SU-dSP" id="jWS-ps-W2l"/>
+                                            <outlet property="textTitleLabel" destination="qvD-Qg-c4u" id="bDG-UJ-DNB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="switchCell" id="9MV-Iq-R0p" customClass="UISwitchViewCell" customModule="Lottery_iOS_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9MV-Iq-R0p" id="m1m-h3-NkQ">
+                                            <frame key="frameInset" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iC2-jA-xNJ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="bqN-rN-dUx"/>
+                                                        <constraint firstAttribute="width" constant="30" id="rx1-Fe-O5J"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGW-gR-niI">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-gf-1K7"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jdf-gf-1K7" secondAttribute="trailing" constant="20" id="0cb-od-fNV"/>
+                                                <constraint firstAttribute="bottom" secondItem="iC2-jA-xNJ" secondAttribute="bottom" constant="7" id="9vh-BL-g08"/>
+                                                <constraint firstItem="iC2-jA-xNJ" firstAttribute="leading" secondItem="m1m-h3-NkQ" secondAttribute="leading" constant="7" id="DNB-JR-lN2"/>
+                                                <constraint firstItem="CGW-gR-niI" firstAttribute="top" secondItem="m1m-h3-NkQ" secondAttribute="topMargin" constant="3" id="FXy-SM-pzZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="jdf-gf-1K7" secondAttribute="bottom" constant="7" id="Klb-kk-iNL"/>
+                                                <constraint firstItem="jdf-gf-1K7" firstAttribute="top" secondItem="m1m-h3-NkQ" secondAttribute="top" constant="7" id="NIc-Kb-bna"/>
+                                                <constraint firstItem="CGW-gR-niI" firstAttribute="leading" secondItem="iC2-jA-xNJ" secondAttribute="trailing" constant="8" id="PIZ-SS-wkp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CGW-gR-niI" secondAttribute="bottom" constant="3" id="PKX-GV-9wx"/>
+                                                <constraint firstItem="iC2-jA-xNJ" firstAttribute="top" secondItem="m1m-h3-NkQ" secondAttribute="top" constant="7" id="RMj-XQ-IzR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImage" destination="iC2-jA-xNJ" id="nhi-FH-8Gx"/>
+                                            <outlet property="textTitleLabel" destination="CGW-gR-niI" id="C32-wv-Htf"/>
+                                            <outlet property="theSwitch" destination="jdf-gf-1K7" id="4XQ-AV-SEW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="H4l-NV-32I" id="yW1-EH-B1A"/>
+                                    <outlet property="delegate" destination="H4l-NV-32I" id="8UO-b7-2Yq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="21z-SB-Pre" firstAttribute="top" secondItem="WP3-gS-crg" secondAttribute="bottom" id="RkS-D3-FCd"/>
+                            <constraint firstItem="WP3-gS-crg" firstAttribute="leading" secondItem="ZIU-Lz-Ur9" secondAttribute="leading" id="TrF-qU-dc1"/>
+                            <constraint firstAttribute="trailing" secondItem="WP3-gS-crg" secondAttribute="trailing" id="y74-eO-G4m"/>
+                            <constraint firstItem="WP3-gS-crg" firstAttribute="top" secondItem="83V-Eg-Nsc" secondAttribute="bottom" constant="-63" id="zK7-aM-MSN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qI6-C7-Jy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="1476"/>
         </scene>
         <!--โปรไฟล์-->
         <scene sceneID="WIo-fJ-ruv">
@@ -833,7 +938,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYd-eY-8D9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="1476"/>
+            <point key="canvasLocation" x="-143" y="1476"/>
         </scene>
         <!--Personal View Controller-->
         <scene sceneID="P9M-KY-FYB">
@@ -941,7 +1046,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIT-Pu-Chk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1429.5999999999999" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="1393" y="1476"/>
         </scene>
         <!--Change Password View Controller-->
         <scene sceneID="nLk-A4-85G">
@@ -1022,7 +1127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqg-7n-RzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215" y="1476"/>
+            <point key="canvasLocation" x="2156" y="1476"/>
         </scene>
     </scenes>
     <resources>
