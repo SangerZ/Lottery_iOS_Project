@@ -216,10 +216,10 @@
                                 <color key="sectionIndexBackgroundColor" red="0.97610527276992798" green="0.9841117262840271" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="discussIndex_Cell" rowHeight="90" id="1hs-Pb-Hf3">
-                                        <rect key="frame" x="0.0" y="92" width="1000" height="90"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hs-Pb-Hf3" id="bnN-zS-8vI">
-                                            <frame key="frameInset" width="1000" height="90"/>
+                                            <frame key="frameInset" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -723,7 +723,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbY-Yz-ZWm" id="RiL-YA-jQi">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Si-SU-dSP">
@@ -756,7 +756,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9MV-Iq-R0p" id="m1m-h3-NkQ">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iC2-jA-xNJ">
@@ -845,7 +845,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="359" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X3C-Dp-7b1" id="jfZ-Mk-MFf">
-                                                            <frame key="frameInset" width="359" height="44"/>
+                                                            <frame key="frameInset" width="359" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -862,7 +862,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="359" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ne-Vh-xdK" id="4qA-ca-7hf">
-                                                            <frame key="frameInset" width="359" height="44"/>
+                                                            <frame key="frameInset" width="359" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -885,7 +885,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="359" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kTD-Fp-lxq" id="THo-aI-pcT">
-                                                            <frame key="frameInset" width="359" height="44"/>
+                                                            <frame key="frameInset" width="359" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -978,6 +978,9 @@
                                 <state key="normal" title="บันทึก">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="updatePersonalProfileBtn:" destination="in9-r1-53D" eventType="touchUpInside" id="31q-nW-Riz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2V-tN-Zmf" customClass="DLRadioButton">
                                 <frame key="frameInset" minX="36" minY="174" width="120" height="30"/>
@@ -994,6 +997,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="maleBtn:" destination="in9-r1-53D" eventType="touchUpInside" id="xAU-E0-ZxK"/>
                                     <outletCollection property="otherButtons" destination="iFg-55-ElK" id="mpV-L4-FeF"/>
                                 </connections>
                             </button>
@@ -1012,6 +1016,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="femaleBtn:" destination="in9-r1-53D" eventType="touchUpInside" id="1AJ-Md-uAt"/>
                                     <outletCollection property="otherButtons" destination="D2V-tN-Zmf" id="zRL-kj-VkV"/>
                                 </connections>
                             </button>
@@ -1041,6 +1046,8 @@
                     </view>
                     <connections>
                         <outlet property="birthdayField" destination="BTV-r3-JEu" id="wJK-KS-Rgy"/>
+                        <outlet property="femaleBtn" destination="iFg-55-ElK" id="Zz4-YE-bQM"/>
+                        <outlet property="maleBtn" destination="D2V-tN-Zmf" id="QF7-cr-3cJ"/>
                         <outlet property="nameField" destination="d4K-Us-O1Q" id="1fP-tb-sfE"/>
                     </connections>
                 </viewController>
@@ -1075,6 +1082,9 @@
                                 <state key="normal" title="บันทึก">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="updatePasswordBtn:" destination="VPu-2Y-jWU" eventType="touchUpInside" id="rDC-H4-Syo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสผ่านปัจจุบัน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-ro-F55">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>

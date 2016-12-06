@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        emailField.text = ""
+        passwordField.text = ""
         // Do any additional setup after loading the view.
     }
 

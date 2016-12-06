@@ -129,6 +129,7 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
         
         switch(indexPath.section){
         case 0:
+            //tableView.allowsSelection = true
             if(indexPath.row == 0){
                 let vs = self.storyboard?.instantiateViewControllerWithIdentifier("personalInfo") as! PersonalViewController
                 
@@ -136,15 +137,44 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
                 vs.birthday = userBirthday
                 vs.gender = userGender
                 
+                vs.checkingNotification = acceptCheckingNotification
+                vs.lotteryNotification = acceptLotteryNotification
+                vs.password = userPassword
+                vs.ID = userID
+                vs.email = userEmail
+                
+//                var userID:Int64!
+//                var userEmail:String!
+//                var userPassword:String!
+//                var userName:String!
+//                var userBirthday:String!
+//                var userGender:String!
+//                var acceptCheckingNotification:Bool!
+//                var acceptLotteryNotification:Bool!
+                
                 self.navigationController?.pushViewController(vs, animated: true)
+            }
+            if(indexPath.row == 1){
+                let vs = self.storyboard?.instantiateViewControllerWithIdentifier("changePassword") as! ChangePasswordViewController
+                
+                vs.currentPassword = userPassword
+                
+                self.navigationController?.pushViewController(vs, animated: true)
+            }
+            if(indexPath.row == 2){
+                print("peanut")
             }
             break
             
         case 1:
+            //tableView.allowsSelection = false
+            
             break
         case 2:
+            //tableView.allowsSelection = true
             break
         default:
+            //tableView.allowsSelection = true
             break
         }
     }
