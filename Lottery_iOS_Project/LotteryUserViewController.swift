@@ -56,6 +56,9 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
         memberLabelList.append("เปลี่ยนรหัสผ่าน")
         memberLabelList.append("ลอตเตอรี่ของฉัน")
         
+        //self.navigationController?.popViewControllerAnimated(false)
+        //self.navigationController?.popToRootViewControllerAnimated(false)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,15 +146,6 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
                 vs.ID = userID
                 vs.email = userEmail
                 
-//                var userID:Int64!
-//                var userEmail:String!
-//                var userPassword:String!
-//                var userName:String!
-//                var userBirthday:String!
-//                var userGender:String!
-//                var acceptCheckingNotification:Bool!
-//                var acceptLotteryNotification:Bool!
-                
                 self.navigationController?.pushViewController(vs, animated: true)
             }
             if(indexPath.row == 1){
@@ -162,7 +156,7 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
                 self.navigationController?.pushViewController(vs, animated: true)
             }
             if(indexPath.row == 2){
-                print("peanut")
+                print("peanut")//go to lottery list of the user
             }
             break
             
@@ -172,6 +166,15 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
             break
         case 2:
             //tableView.allowsSelection = true
+            if(indexPath.row == 0){
+            
+            }
+            if(indexPath.row == 1){
+            
+            }
+            if(indexPath.row == 2){
+                self.navigationController?.popViewControllerAnimated(true)
+            }
             break
         default:
             //tableView.allowsSelection = true

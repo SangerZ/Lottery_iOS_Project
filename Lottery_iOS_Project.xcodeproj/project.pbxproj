@@ -37,6 +37,7 @@
 		F00F73481DDF261E009033C3 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00F73471DDF261E009033C3 /* RegistrationViewController.swift */; };
 		F00F734A1DDF4FA1009033C3 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00F73491DDF4FA1009033C3 /* PersonalViewController.swift */; };
 		F00F734C1DDF5595009033C3 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00F734B1DDF5595009033C3 /* ChangePasswordViewController.swift */; };
+		F01046F31DFA79D0005F6C4F /* LotteryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01046F21DFA79D0005F6C4F /* LotteryListViewController.swift */; };
 		F0B278C71DE332020029FE06 /* CustomUISwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B278C51DE332020029FE06 /* CustomUISwitchTableViewCell.swift */; };
 		F0B278C81DE332020029FE06 /* CustomUISwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B278C61DE332020029FE06 /* CustomUISwitchTableViewCell.xib */; };
 		F0E3C10C1DE057EF008863B6 /* DLRadioButton.h in Sources */ = {isa = PBXBuildFile; fileRef = F001D0591DDDF149000FFAE7 /* DLRadioButton.h */; };
@@ -78,6 +79,7 @@
 		F00F73471DDF261E009033C3 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F00F73491DDF4FA1009033C3 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		F00F734B1DDF5595009033C3 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		F01046F21DFA79D0005F6C4F /* LotteryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryListViewController.swift; sourceTree = "<group>"; };
 		F0B278C51DE332020029FE06 /* CustomUISwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUISwitchTableViewCell.swift; sourceTree = "<group>"; };
 		F0B278C61DE332020029FE06 /* CustomUISwitchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomUISwitchTableViewCell.xib; sourceTree = "<group>"; };
 		F0FAC5D21DEEFCFA00A79D10 /* LotteryUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryUserViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				F0B278C51DE332020029FE06 /* CustomUISwitchTableViewCell.swift */,
 				F0B278C61DE332020029FE06 /* CustomUISwitchTableViewCell.xib */,
 				F0FAC5D21DEEFCFA00A79D10 /* LotteryUserViewController.swift */,
+				F01046F21DFA79D0005F6C4F /* LotteryListViewController.swift */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				F001D0521DDDB891000FFAE7 /* mUser.swift in Sources */,
 				F001D0531DDDB891000FFAE7 /* mUserLottery.swift in Sources */,
 				1632AF891DC50EF700DF20DD /* DiscussIndexViewController.swift in Sources */,
+				F01046F31DFA79D0005F6C4F /* LotteryListViewController.swift in Sources */,
 				F001D03B1DDDB84E000FFAE7 /* Ws_User.swift in Sources */,
 				F001D04C1DDDB891000FFAE7 /* mDiscussReply.swift in Sources */,
 				F00F734A1DDF4FA1009033C3 /* PersonalViewController.swift in Sources */,

@@ -29,6 +29,7 @@ class ChangePasswordViewController: UIViewController {
         currentPasswordField.text = currentPassword
         self.hideKeyboardWhenTappedAround()
 
+        //self.navigationController?.popViewControllerAnimated(false)
         // Do any additional setup after loading the view.
     }
 

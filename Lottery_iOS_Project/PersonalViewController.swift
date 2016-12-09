@@ -40,6 +40,7 @@ class PersonalViewController: UIViewController {
         else{
             femaleBtn.selected = true
         }
+        //self.navigationController?.popViewControllerAnimated(false)
     }
 
     override func didReceiveMemoryWarning() {
