@@ -140,8 +140,8 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
                 vs.birthday = userBirthday
                 vs.gender = userGender
                 
-                vs.checkingNotification = acceptCheckingNotification
-                vs.lotteryNotification = acceptLotteryNotification
+//                vs.checkingNotification = acceptCheckingNotification
+//                vs.lotteryNotification = acceptLotteryNotification
                 vs.password = userPassword
                 vs.ID = userID
                 vs.email = userEmail
@@ -153,10 +153,20 @@ class LotteryUserViewController: UIViewController, UITableViewDataSource, UITabl
                 
                 vs.currentPassword = userPassword
                 
+                vs.name = userName
+                vs.ID = userID
+                vs.email = userEmail
+                vs.gender = userGender
+                vs.birthday = userBirthday
+                
                 self.navigationController?.pushViewController(vs, animated: true)
             }
             if(indexPath.row == 2){
-                print("peanut")//go to lottery list of the user
+                //print("peanut")//go to lottery list of the user
+                let vs = self.storyboard?.instantiateViewControllerWithIdentifier("lotteryList") as! LotteryListViewController
+                
+                vs.userID = userID
+                self.navigationController?.pushViewController(vs, animated: true)
             }
             break
             
